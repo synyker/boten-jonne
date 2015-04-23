@@ -1,6 +1,7 @@
 #!/bin/bash
- 
-export EXPRESS_PORT=21472
+
+export PORT=18150 
+export EXPRESS_PORT=18150
 export HUBOT_IRC_SERVER=open.ircnet.net
 export HUBOT_IRC_ROOMS="#tkt-jousiammunta-autot"
 export HUBOT_IRC_NICK="boten-jonne"
