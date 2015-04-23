@@ -1,9 +1,12 @@
 {
-  "name": "hubot-ircbot-example",
+  "name": "boten-jonne",
   "version": "0.0.1",
   "dependencies": {
+    "coffee-script": "~> 1.4.0",
+    "scoped-http-client": "0.9.7",
     "hubot": "2.3.0",
-    "hubot-irc": "0.1.0",
+    "hubot-scripts": "2.4.1",
+    "hubot-irc": "^0.2.7",
 
     "cheerio": ">=0.9.0",
     "request": ">=2.9.203",
