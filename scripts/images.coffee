@@ -1,14 +1,12 @@
 module.exports = (robot) ->
   robot.router.post "/image", (req, res) ->
-  	data = req.body.payload
-    #data = if req.body.payload? then JSON.parse req.body.payload else req.body
+    data = req.body
+    console.log(req)
+    console.log(data.foo)
     #channels = data.channels.split(',')
-    #sender = data.sender
-    #baseurl = data.baseurl
-    #img = data.image
-    user = data.user
-    #send '#tkt-jousiammunta-autot', "#{sender}: #{baseurl}/#{img}"
-    #send '#tkt-jousiammunta-autot', "kulliii"
+    nick = data.nick
+    baseurl = data.baseurl
+    img = data.image
 
     robot.messageRoom '#tkt-jousiammunta-autot', 
-          "#{user}"
+          "#{nick} uploaded: #{baseurl}#{img}"
